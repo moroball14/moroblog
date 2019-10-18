@@ -1,0 +1,16 @@
+
+<div class="container">
+  <!-- 投稿フォームここから -->
+  <div class="row">
+    <%= form_for @blog, html: { class: 'col s12' } do |f| %>
+      <div class="row">
+        <div class="input-field col s12 color-is-white">
+          <%= f.text_area :text, id: :textarea1, :class => 'materialize-textarea', placeholder: "どんなことがありました？" %>
+        </div>
+      </div>
+      <%= f.submit "編集する", :class => 'btn waves-effect waves-light edit-btn color-is-pink' %>
+    <% end %>
+  </div>
+  
+
+</div>

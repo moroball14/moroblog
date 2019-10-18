@@ -1,0 +1,12 @@
+<div class="container">
+  
+  <ul>
+    <% @blogs.each do |blog| %>
+      <%= render partial: "blog", locals: { blog: blog } %>
+    <% end %>
+    <%= paginate @blogs %>
+  </ul>
+  
+  <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+
+</div>

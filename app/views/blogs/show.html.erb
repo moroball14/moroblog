@@ -1,0 +1,12 @@
+<div class="container">
+  <ul>
+      <li class="card-panel hoverable"> 
+        <p><%= @blog.text %></p>
+        <% if user_signed_in? && (@blog.user_id === current_user.id) %>
+          <%= link_to "編集", "/blogs/#{@blog.id}/edit", method: :get, class: 'waves-effect waves-light btn color-is-pink' %>
+          <%= link_to "削除", "/blogs/#{@blog.id}", method: :delete, class: 'waves-effect waves-light btn delete-btn color-is-pink' %>
+        <% end %>
+        <%= link_to "戻る", root_path, class: 'waves-effect waves-light btn color-is-pink' %>
+      </li>
+  </ul>
+</div>

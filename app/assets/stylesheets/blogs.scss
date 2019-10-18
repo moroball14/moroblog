@@ -1,0 +1,74 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #fff5ee;
+}
+
+nav {
+  z-index: 10;
+}
+
+.nav-wrapper {
+  width: 960px;
+}
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  // padding-top: 64px;
+  min-height: calc(100vh - 134px);
+}
+
+.user-name {
+  font-size: 25px;
+}
+
+.color-is-pink {
+  background-color: #ee6e73;
+}
+
+.pagination {
+  background-color: transparent;
+  display: inline-block;
+}
+
+.color-is-white {
+  background-color: #fff;
+}
+
+span {
+  color: black;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #ee6e73;
+  }
+}
+
+#page-top {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  font-size: 77%;
+  }
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+
+.footer-text {
+  text-align: center;
+}
